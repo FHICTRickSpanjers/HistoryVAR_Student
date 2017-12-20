@@ -53,6 +53,7 @@
   <ItemGroup>
      <Compile Include="Assets\Vuforia\Editor\Scripts\OpenSourceInitializer.cs" />
      <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
+     <None Include="Assets\StreamingAssets\Vuforia\HistoryVAR.xml" />
      <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
      <None Include="Assets\Editor\Vuforia\VuforiaMars_VuMark\authoringinfo.xml" />
      <None Include="Assets\Objects\JuliusCaesarBust\readme_first.txt" />
@@ -62,7 +63,7 @@
      <None Include="Assets\StreamingAssets\Vuforia\VuforiaMars_Images.xml" />
      <None Include="Assets\Vuforia\Shaders\BrightTexture.shader" />
      <None Include="Assets\StreamingAssets\Vuforia\VuforiaMars_VuMark.xml" />
-     <None Include="Assets\StreamingAssets\Vuforia\HistoryVAR.xml" />
+     <None Include="Assets\Objects\Jurassic Pack\DinoIsland\Game_FX\waterplane\JPWater.shader" />
      <None Include="Assets\Editor\Vuforia\CylinderTargetTextures\VuforiaMars_Images\authoringinfo.xml" />
      <None Include="Assets\Vuforia\Shaders\Text3D.shader" />
  <Reference Include="UnityEngine.UI">
@@ -145,6 +146,9 @@
  </Reference>
  <Reference Include="System.Data">
  <HintPath>/Users/rubenfalkenburg/Documents/PROJECTS/HistoryVAR/Assets/Plugins/System.Data.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Drawing">
+ <HintPath>/Users/rubenfalkenburg/Documents/PROJECTS/HistoryVAR/Assets/Plugins/System.Drawing.dll</HintPath>
  </Reference>
  <Reference Include="System.Windows.Forms">
  <HintPath>/Users/rubenfalkenburg/Documents/PROJECTS/HistoryVAR/Assets/Plugins/System.Windows.Forms.dll</HintPath>

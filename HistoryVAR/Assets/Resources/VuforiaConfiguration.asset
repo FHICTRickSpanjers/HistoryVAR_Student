@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
-    vuforiaLicenseKey: AeJixHn/////AAAAGduLT3BvCEGDphJK3GP0nf9Em0JPmZ/8oa+/updinXve+ZH1ReU6eOKizNH8PF9j0as0vBr69urud/e/YWaaBFhZO9UVTBZ8v11ax3Y712Mi+FkyGUAlaX8TlgFY3GwqSlhBc+bqWmTW2QrZnP7CwMmc2iCvgR18F2W220Hd4Z8CZbQOnOXffSNjyk48Y75yhGkYiKu7OcVPuUVJ0T2zScvbY6PbY1GJWXa6b4l0kK8EpHBAe43PB461iMg6P8ZNjFNSbtnjWgy5H6lEAd7BlufUKYDZHZijUaup/lKrnIQooSzdDOUomYvWESq4IjyY6cKDUVsmVZNf9TCUJfjVwjM5keW18ZT9uynZUX5XZsi5
+    vuforiaLicenseKey: AWr4S8//////AAAAmQdg5gxmhUlphw96xFFomWkiKnNKWbQGMVpoRd4BCh6WkLpAtQZeCjtM9z20b9/894eF94G+MzmajTvtrfRcGd000xk+nty8JosQZC+b0iJyxRzT5i2jkYmTrnb9r0EzQGQDeQc+hsdLL+saG1HfrqMP18X4NX6pv2y6o/ekVlKxr2P7E/NlbJhjz7NW6moZXakPYuD7eZNhvYsKuIv+O/Uk5ibRsyInyD3N1KxmeiGBuYDZdGGheqsh5btjR4SnHEwnf8AdtJxaPaf6KeK+TXQBSCHFrX4H49gDIl4plv9ZRDhU7klr3sgPELDRhtp0jieaX6AWtpPzBhT86s7CsABSln+dNxZDZ8+J9uuQ3Es2
     ufoLicenseKey: QVl1ZjVVdi8vLy8vQUFBQUtNNzl4Q08yN2t0MXVRNk5hRFVwNE5KRzVPbXNuTjlMUUU5c3FGOFVNR0RDbC9vMzNIdVB6R1dUVnFlUEdlVEIzZEFnWFpENklDS2l2YXlyaHIrWFhkRVdXc2RhQS8ySkhoOExnd09iaFNhOHF3LzFaMmplRlJsWkttN0ZldFB2Ym1zLzlBakRyeVZVMytZNWMwOUJjUlVaa21nUm9Hc0lVNWNkOUJ1b21Zd1duU21SYWl6RWVOUzJSN0VtdDYwT2diWjA2dDdJUlV4UllNem5HcE52VCtjZzBSR09uN0NzVmpFb3RYQ2trclhuYTlrbjV3SUYzUnpQczhTb3RRMDAyam1ybGVuM1JRWnROQ1FBeTB3Vm8wSHQyRk9sQjJqWFh0WE03N1FGeE90RDVBSnc4d0FXSmxpemU0ajV0cVRDT3V5ejhOMm9RUU1CRUo1RVZIRUhCZTAwZ0lIT3VXa1lOcFlHS3g5SG81REY=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
     maxSimultaneousImageTargets: 1
     maxSimultaneousObjectTargets: 1
     useDelayedLoadingObjectTargets: 0
-    cameraDirection: 1
+    cameraDirection: 0
     mirrorVideoBackground: 0
   digitalEyewear:
     cameraOffset: 0.06
@@ -45,14 +45,14 @@ MonoBehaviour:
   databaseLoad:
     dataSetsToLoad:
     - HistoryVAR
-    - VuforiaMars_VuMark
     - VuforiaMars_Images
     - VuforiaMars_Object_OT
+    - VuforiaMars_VuMark
     dataSetsToActivate:
     - HistoryVAR
-    - VuforiaMars_VuMark
     - VuforiaMars_Images
     - VuforiaMars_Object_OT
+    - VuforiaMars_VuMark
   videoBackground:
     clippingMode: 0
     numDivisions: 2

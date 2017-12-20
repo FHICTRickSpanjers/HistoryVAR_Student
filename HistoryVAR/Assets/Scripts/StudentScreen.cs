@@ -49,17 +49,31 @@ public class StudentScreen : MonoBehaviour {
 		}
 
 		//Get StudentGroup, Lessons for the group & lessons for all groups
-		var StudentGroup = DB.FindGroupIDBasedOnLessonID(StudentID);
+		var StudentGroup = DB.FindGroupIDBasedOnStudent(StudentID);
 		var GroupLessons = DB.GetLessonsBasedOnGroupID (StudentGroup.Get_Group_ID());
 		var GroupLessonsForAll = DB.GetLessonsBasedOnGroupID (0);
 
 		int i = 0;
+		Debug.Log ("Aantal lessen: "+GroupLessonsForAll.Count);
+
 		//Make a TextBox and button for every lesson that is available
 		foreach (var SingleLesson in GroupLessons) 
 		{
 			if (SingleLesson.LessonStatus == "Published") 
 			{
 				AddButton (SingleLesson.GetLessonName().ToString());
+				Debug.Log (SingleLesson.GetLessonName().ToString() + " toegevoegd");
+				i++;
+			}	
+		}
+
+		//Do the same as before just for lessons available for all groups
+		foreach(var SingleLesson in GroupLessonsForAll)
+		{
+			if (SingleLesson.LessonStatus == "Published") 
+			{
+				AddButton (SingleLesson.GetLessonName().ToString());
+				Debug.Log (SingleLesson.GetLessonName().ToString() + " toegevoegd");
 				i++;
 			}	
 		}
@@ -68,28 +82,46 @@ public class StudentScreen : MonoBehaviour {
 
 	private void AddButton(string LessonName)
 	{
-		//Add button to listbox
-		LessonGO = new GameObject(LessonName);
-		RectTransform LessonRT = LessonGO.AddComponent<RectTransform> ();
-		LessonRT.SetParent (LstLessons.transform);
-		LessonRT.sizeDelta = new Vector2 (420.0f, 80.0f);
-		Button LessonBTN = LessonGO.AddComponent<Button> ();
-		Image LessonIM = LessonGO.AddComponent<Image> ();
-		LessonBTN.onClick.AddListener (() => {
+		//Add GameObject to listbox
+		GameObject ButtonGO = new GameObject(LessonName);
+
+		//Add RectTransform component to Gameobject and set parent and scale
+		RectTransform ButtonRT = ButtonGO.AddComponent<RectTransform> ();
+		ButtonRT.SetParent (LstLessons.transform);
+		ButtonRT.localScale = new Vector3 (1.0f, 1.0f);
+
+		//Add Vertical Layout Group component to GameObject and add padding
+		VerticalLayoutGroup ButtonVLG = ButtonGO.AddComponent<VerticalLayoutGroup> ();
+		ButtonVLG.padding.left = 20;
+		ButtonVLG.padding.right = 20;
+		ButtonVLG.padding.bottom = 20;
+		ButtonVLG.padding.top = 20;
+
+		//Add Button component to GameObject and set click eventhandler
+		Button ButtonBTN = ButtonGO.AddComponent<Button> ();
+		ButtonBTN.onClick.AddListener (() => {
 			OpenLesson(LessonName);
 		});
 
-		//Add textbox to button
-		LessonTXT = new GameObject("Text");
-		RectTransform LessonTXTRT = LessonTXT.AddComponent<RectTransform> ();
-		LessonTXTRT.SetParent (LessonGO.transform);
-		LessonTXTRT.sizeDelta = new Vector2 (420.0f, 80.0f);
-		Text LessonTitle = LessonTXT.AddComponent<Text> ();
-		LessonTitle.text = LessonName;
-		LessonTitle.color = Color.black;
-		LessonTitle.font = Resources.GetBuiltinResource(typeof(Font), "Arial.ttf") as Font;
-		LessonTitle.fontSize = 28;
-		LessonTitle.alignment = TextAnchor.MiddleCenter;
+		//Add Image component to GameObject
+		Image ButtonIM = ButtonGO.AddComponent<Image> ();
+
+
+		//Add GameObject to Button component
+		GameObject ButtonTXT = new GameObject("Text");
+
+		//Add RectTransform component to GameObject and set Parent and scale
+		RectTransform ButtonTXTRT = ButtonTXT.AddComponent<RectTransform> ();
+		ButtonTXTRT.SetParent (ButtonGO.transform);
+		ButtonTXTRT.localScale = new Vector3 (1.0f, 1.0f);
+
+		//Add Text component to GameObject and add text,color,font,fontsize and set alignment and resize text for best fit
+		Text ButtonTitle = ButtonTXT.AddComponent<Text> ();
+		ButtonTitle.text = LessonName;
+		ButtonTitle.color = Color.black;
+		ButtonTitle.font = Resources.GetBuiltinResource(typeof(Font), "Arial.ttf") as Font;
+		ButtonTitle.fontSize = 28;
+		ButtonTitle.alignment = TextAnchor.MiddleCenter;
 	}
 
 	private void OpenLesson(string LessonName)
