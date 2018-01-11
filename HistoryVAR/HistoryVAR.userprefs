@@ -1,12 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LessonScreen.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Login.cs">
     <Files>
-      <File FileName="Assets/Objects/Jurassic Pack/Creatures/Shared/shared.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/DBRepository.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/StudentScreen.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/LessonScreen.cs" Line="136" Column="3" />
-      <File FileName="Assets/Scripts/ArtImage.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Login.cs" Line="38" Column="26" />
+      <File FileName="Assets/Scripts/DBRepository.cs" Line="91" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
