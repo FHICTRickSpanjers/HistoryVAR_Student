@@ -48,7 +48,6 @@ public class frmLogin : MonoBehaviour {
 				SceneManager.LoadScene ("Student_Screen");
 				SelectedUser = new GameObject (InputUsername.text);
 				DontDestroyOnLoad (SelectedUser);
-				Debug.Log ("Succesful login");
 			} 
 			else 
 			{

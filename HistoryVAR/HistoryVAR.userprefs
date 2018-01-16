@@ -2,10 +2,17 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/frmAR.cs">
     <Files>
-      <File FileName="Assets/Scripts/frmLesson.cs" Line="179" Column="41" />
-      <File FileName="Assets/Scripts/DBRepository.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/frmLesson.cs" Line="153" Column="3" />
+      <File FileName="Assets/Scripts/Lesson.cs" Line="82" Column="28" />
+      <File FileName="Assets/Scripts/frmAR.cs" Line="22" Column="4" />
+      <File FileName="Assets/Scripts/disableVuforia.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ArtImage.cs" Line="47" Column="10" />
+      <File FileName="Assets/Scripts/Teacher.cs" Line="50" Column="14" />
+      <File FileName="Assets/Scripts/Student.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Group.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Creator.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/ArtObject.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/frmAR.cs" Line="33" Column="47" />
+      <File FileName="Assets/Scripts/DBRepository.cs" Line="1166" Column="32" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

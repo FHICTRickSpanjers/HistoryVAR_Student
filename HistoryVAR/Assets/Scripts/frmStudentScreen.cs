@@ -79,18 +79,18 @@ public class frmStudentScreen : MonoBehaviour {
 		btnRT.SetParent (lstLessons.transform);
 		btnRT.localScale = new Vector3 (1.0f, 1.0f, 1.0f);
 
-		//Verical Layout Group
+		//Verical Layout Group - padding 
 		VerticalLayoutGroup btnVLG = btnGO.AddComponent<VerticalLayoutGroup>();
 		btnVLG.padding.left = 20;
 		btnVLG.padding.right = 20;
 		btnVLG.padding.bottom = 20;
 		btnVLG.padding.top = 20;
 
-		//Add Image
+		//Add Image - background
 		Image btnIMG = btnGO.AddComponent<Image> ();
 		btnIMG.color = new Color(150f/255.0f, 32f/255.0f, 37f/255.0f);
 
-		//Button
+		//Button - Evenhandler
 		Button btnBTN = btnGO.AddComponent<Button> ();
 		btnBTN.onClick.AddListener (() => {
 			OpenLesson(LessonName, btnIMG);

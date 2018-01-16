@@ -80,8 +80,9 @@ public class frmLesson : MonoBehaviour {
 
 		//Add RectTransform component to Gameobject and set parent and scale
 		RectTransform btnRT = btnGO.AddComponent<RectTransform> ();
+		//Set size same as parent 
 		btnRT.SetParent (ListImages.transform);
-		btnRT.localScale = new Vector3 (1.0f, 1.0f);
+		btnRT.localScale = new Vector3 (1.0f, 1.0f, 1.0f);
 
 		//Add Vertical Layout Group component to GameObject and add padding
 		VerticalLayoutGroup btnVLG = btnGO.AddComponent<VerticalLayoutGroup> ();
@@ -126,7 +127,7 @@ public class frmLesson : MonoBehaviour {
 		Sprite sprite = Sprite.Create (tex, new Rect(0,0,tex.width,tex.height), new Vector2(0.5f, 0.5f));
 		LessonImg.sprite = sprite;
 
-		background.color = new Color(220f/255.0f, 51f/255.0f, 74f/255.0f);
+		//background.color = new Color(220f/255.0f, 51f/255.0f, 74f/255.0f);
 	}
 
 	private void AddButton(ArtObject Object)

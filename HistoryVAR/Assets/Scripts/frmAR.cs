@@ -17,7 +17,7 @@ public class frmAR : MonoBehaviour {
 		{
 			if (ArtObject.name != frmLesson.SelectedArtObject.name) 
 			{
-				ArtObject.SetActive (false);	
+				ArtObject.SetActive (false);
 			}	
 		}
 	}
